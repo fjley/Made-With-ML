@@ -14,3 +14,11 @@ Make sure that you are working on the correct python version by doing
 ```
 python3 --version
 ```
+In order to run jupyter lab, if getting an error of the sort 'zsh: command not found: jupyter', add the path to the library to PATH. First, look for jupyterlab path:
+```
+pip3 show jupyterlab | grep Location
+```
+And then, add the path to jupyterlab to PATH:
+```
+export PATH=/path/to/jupyterlab:$PATH
+```
